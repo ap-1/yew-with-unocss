@@ -1,0 +1,25 @@
+{
+	"name": "yew-with-unocss",
+	"version": "1.0.0",
+	"description": "A template for integrating UnoCSS with Yew.",
+	"homepage": "https://github.com/ap-1/yew-with-unocss#readme",
+	"bugs": {
+		"url": "https://github.com/ap-1/yew-with-unocss/issues",
+		"email": "anishp@duck.com"
+	},
+	"repository": "github:ap-1/yew-with-unocss",
+	"scripts": {
+		"uno": "unocss src/**/*.rs index.html --out-file static/uno.css",
+		"build": "concurrently 'trunk build --release' 'npm run uno'",
+		"dev": "concurrently 'trunk serve' 'npm run uno -- --watch'",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"preinstall": "npx only-allow pnpm"
+	},
+	"keywords": [],
+	"author": "Anish Pallati <anishp@duck.com>",
+	"license": "(MIT OR Apache-2.0)",
+	"devDependencies": {
+		"@unocss/cli": "^0.48.4",
+		"concurrently": "^7.6.0"
+	}
+}

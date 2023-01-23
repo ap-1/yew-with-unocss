@@ -1,0 +1,15 @@
+[package]
+name = "yew-with-unocss"
+version = "1.0.0"
+edition = "2021"
+authors = ["Anish Pallati <anishp@duck.com>"]
+license = "MIT OR Apache-2.0"
+description = "A template for integrating UnoCSS with Yew."
+homepage = "https://github.com/ap-1/yew-with-unocss#readme"
+repository = "https://github.com/ap-1/yew-with-unocss"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+yew = { version = "0.20.0", features = ["csr"] }
